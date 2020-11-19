@@ -1,11 +1,13 @@
 class EmployeePayrollData{
-    // constructor(...params){
-    //     this.id = params[0];
-    //     this.name = params[1];
-    //     this.salary = params[2];
-    //     this.gender = params[3];
-    //     this.startDate = params[4];
-    // }
+    constructor(...params){
+        this.name = params[0];
+        this.profilePic = params[1];
+        this.gender = params[2];
+        this.department = params[3];
+        this.salary = params[4];
+        this.startDate = params[5];
+        this.note = params[6];
+    }
 
     get id(){return this._id;}
     set id(id){
@@ -54,7 +56,7 @@ class EmployeePayrollData{
         // console.log(this.gender == this.startDate);
         const options = {year: 'numeric', month: 'long', day: 'numeric'};
         const empDate = !this.startDate?"undefined":
-                        this.startDate.toLocalDateString("en-US", options);
+                        this.startDate.toLocaleDateString("en-US", options);
         return "id = "+this.id+", name= "+this.name+", profilePic= "+this.profilePic+", gender= "+this.gender+", department= "+this.department+", salary= "+this.salary
         +", note= "+this.note+", startDate= "+empDate;
     }
