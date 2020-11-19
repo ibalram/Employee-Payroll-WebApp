@@ -1,13 +1,13 @@
 class EmployeePayrollData{
-    constructor(...params){
-        this.name = params[0];
-        this.profilePic = params[1];
-        this.gender = params[2];
-        this.department = params[3];
-        this.salary = params[4];
-        this.startDate = params[5];
-        this.note = params[6];
-    }
+    // constructor(...params){
+    //     this.name = params[0];
+    //     this.profilePic = params[1];
+    //     this.gender = params[2];
+    //     this.department = params[3];
+    //     this.salary = params[4];
+    //     this.startDate = params[5];
+    //     this.note = params[6];
+    // }
 
     get id(){return this._id;}
     set id(id){
